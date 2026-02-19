@@ -9,7 +9,7 @@
     // https://github.com/googlecreativelab/teachablemachine-community/tree/master/libraries/image
 
     // the link to your model provided by Teachable Machine export panel
-    const URL = 'https://teachablemachine.withgoogle.com/models/ovbVEoEWg/';
+    const URL = 'https://teachablemachine.withgoogle.com/models/z_35gCumh/';
 
     let model, webcam, labelContainer, maxPredictions;
 
@@ -30,7 +30,7 @@
         maxPredictions = model.getTotalClasses();
 
         // Convenience function to setup a webcam
-        const flip = false; // whether to flip the webcam
+        const flip = true; // whether to flip the webcam
         const width = 200;
         const height = 200;
         webcam = new tmImage.Webcam(width, height, flip);
@@ -78,5 +78,6 @@
         }
     }
 </script>
+
 
 
